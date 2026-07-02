@@ -1,0 +1,9 @@
+dataset_id,dataset_name,local_h5ad,keep_filter_note
+Hoo_2024_CellSystems,Hoo.2024.CellSystems,data/external/placental_reference/50bbe1a2-5f27-47f5-a809-046459a4ae5e.h5ad,Public placental reference h5ad downloaded from CZI; see archived provenance script for original UUID/path mapping.
+Arutyunyan_2023_Nature_1,Arutyunyan.2023.Nature.1,data/external/placental_reference/b4e813a4-e9e0-4735-9c4b-fac499ac1696.h5ad,Public placental reference h5ad downloaded from CZI.
+Arutyunyan_2023_Nature_2,Arutyunyan.2023.Nature.2,data/external/placental_reference/b36f6787-e0fe-429c-a024-5a8d6915e781.h5ad,Public placental reference h5ad downloaded from CZI; optional depending on memory budget.
+Arutyunyan_2023_Nature_3,Arutyunyan.2023.Nature.3,data/external/placental_reference/1d0c5d7d-5450-4387-8063-c665e4bed731.h5ad,Public placental reference h5ad downloaded from CZI; optional depending on memory budget.
+Cao_2020_Science_1,Cao.2020.Science.1,data/external/placental_reference/5b8941a9-fef8-4348-876c-c333a87c0c3f.h5ad,Public reference; original workflow filtered normal placenta cells.
+Cao_2020_Science_2,Cao.2020.Science.2,data/external/placental_reference/35476cf7-35f1-4daf-8507-734403d09c27.h5ad,Public reference; original workflow filtered normal placenta cells.
+Han_2020_Nature,Han.2020.Nature,data/external/placental_reference/ae0c62a1-a30f-4033-97d2-0edb2e146c53.h5ad,Public reference; original workflow filtered tissue and gestational-stage subsets.
+VentoTormo_2018_Nature,VentoTormo.2018.Nature,data/external/placental_reference/01b1a201-b5cf-4ffd-8e3b-284aeb5f11c5.h5ad,Public maternal-fetal interface reference; included in original reference build provenance.

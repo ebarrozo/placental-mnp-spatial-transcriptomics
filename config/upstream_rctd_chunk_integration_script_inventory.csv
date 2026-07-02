@@ -1,0 +1,12 @@
+script,workflow_stage,n_lines,contains_RCTD,contains_SCT_chunking,contains_integration_or_umap,public_status
+HP2_hd.R,Object loading/harmonization; HP2 Xenium versus Visium HD name collision fix,460,true,false,false,archived provenance; requires large GEO/raw/intermediate files and server paths
+RCTD_spatialmnp.R,RCTD annotation; broad Visium v1/v2 run and post-processing provenance,593,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+RCTD_spatialmnp_visiumv1.R,RCTD annotation; Visium v1-specific revised run with dynamic UMI thresholding,388,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+RCTD_spatialmnp_xen_hd.R,RCTD annotation; Xenium and Visium HD run with dynamic UMI thresholding,399,true,false,false,archived provenance; requires large GEO/raw/intermediate files and server paths
+RCTD_spatialmnp_xen_hd_HP13b_v1.R,RCTD annotation; focused HP13b/Visium v1 rescue run,321,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+harmonized_vis_v1.R,Lightweight visualization object; harmonized embeddings/meta from mapped chunks,637,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+obj_integrated_final.R,Final platform merge/integration; Seurat v5-safe SCT merge and final DR,293,false,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+rebuild_viz_embed_only.R,Rebuild lightweight embed-only UMAP object from mapped chunks,211,false,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+sctransform_spatial_harmonized.R,SCT chunking and mapping; memory-safe per-sample chunk workflow,1077,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+viz_meta_remap.R,Final visualization metadata remap; chunk/sample/platform harmonization,366,true,true,true,archived provenance; requires large GEO/raw/intermediate files and server paths
+weee_harmony.R,Annotation remapping; transfer annotated metadata back into source Seurat objects,183,true,false,false,archived provenance; requires large GEO/raw/intermediate files and server paths
