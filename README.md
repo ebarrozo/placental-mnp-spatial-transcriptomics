@@ -1,6 +1,4 @@
-# placental-mnp-spatial-transcriptomics
-Reproducible analysis repository for placental micro- and nanoplastic burden spatial transcriptomics, including public Seurat object workflows, figure and source-table generation, annotation QC, module/pathway analyses, macrophage states, communication analyses, and supplementary table assembly.
-[README.md](https://github.com/user-attachments/files/29609336/README.md)# Spatial MNP placenta analysis code
+# Spatial MNP placenta analysis code
 
 This repository contains code to reproduce the downstream analyses, figures, and tables for the manuscript:
 
@@ -161,4 +159,34 @@ outputs/tables/supplementary_table1/csv_source_tables/
 ```
 
 The original working script is archived as `provenance/archived_scripts/supp_table1.R`. The public builder intentionally avoids relying on objects left in the R session after `meta_update.R` and uses a conservative metadata allowlist so direct identifiers, exact dates, free-text clinical fields, and PHI-like columns are not included in public metadata exports.
+
+## Upstream preprocessing provenance
+
+This repository now includes an upstream preprocessing layer for the raw-to-public-object workflow. Server-specific historical scripts are archived under `provenance/archived_scripts/upstream/`, while public-facing scaffolds and manifests are provided under `scripts/upstream_preprocessing/`, `workflows/00_reference_preprocessing/`, and `workflows/01_spaceranger/`.
+
+These upstream scripts document placental reference construction from public h5ad files and Space Ranger count preprocessing for Visium v1 and Visium HD samples. They require local edits to raw-data paths before execution.
+
+
+## Upstream RCTD and chunk-integration provenance
+
+The repository includes an upstream provenance layer for RCTD annotation transfer, sample/barcode harmonization, SCT chunking, mapped-chunk integration, and final UMAP/object construction. These scripts are archived under:
+
+```text
+provenance/archived_scripts/upstream/rctd_chunk_integration/
+```
+
+The full upstream workflow requires large GEO-linked files and server-scale memory. The default public analysis starts from the processed public Seurat object; the upstream scripts document how that object was generated and how RCTD/chunk-processing decisions were made.
+
+See:
+
+```text
+docs/rctd_chunk_integration_workflow.md
+workflows/02_rctd_annotation/README.md
+workflows/03_sct_chunking_integration/README.md
+config/upstream_rctd_chunk_integration_script_inventory.csv
+```
+
+## Path sanitization
+
+Private absolute server paths in archived provenance scripts have been replaced with generic placeholders before public release. See `docs/path_sanitization_note.md` for details.
 
