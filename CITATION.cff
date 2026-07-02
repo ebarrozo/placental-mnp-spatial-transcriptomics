@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Spatial MNP placenta analysis code
+message: Please cite this repository and the associated manuscript.
+type: software
+authors:
+  - family-names: Barrozo
+    given-names: Enrico R.
+repository-code: https://github.com/MADscientist314/mnp-spatial-placenta
+license: MIT
+version: 0.1.0
