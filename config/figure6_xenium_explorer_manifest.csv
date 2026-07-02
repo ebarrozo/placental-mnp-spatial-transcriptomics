@@ -1,5 +1,0 @@
-panel,delivery_class,mnp_burden,interpretation_marker,sample_id_std,xenium_output_directory,xenium_region_label,figure_description
-A,Preterm,Low,HOXB7,LP1_xen,output-XETG00320__0023238__Region_1__20250108__200831,Belfort1-region1,Low-MNP preterm Xenium Explorer marker map
-B,Preterm,High,HOXB7,HP1_xen,output-XETG00320__0023238__Region_2__20250108__200832,Belfort1-region2,High-MNP preterm Xenium Explorer marker map
-C,Term,Low,PECAM1,LT2_xen,output-XETG00320__0058012__Region_2__20250116__182319,Belfort2-region2,Low-MNP term Xenium Explorer marker map
-D,Term,High,PECAM1,HT2b_xen,output-XETG00320__0058014__Region_2__20250116__182319,Belfort2-region2,High-MNP term Xenium Explorer marker map
